@@ -1,0 +1,23 @@
+{
+  "name": "basiccontrollerstest",
+  "version": "1.0.0",
+  "description": "Tests project in cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ironking666/BasicControllersTest.git"
+  },
+  "author": "Krzysztof Waliszewski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ironking666/BasicControllersTest/issues"
+  },
+  "homepage": "https://github.com/ironking666/BasicControllersTest#readme",
+  "devDependencies": {
+    "cypress": "^12.12.0",
+    "@faker-js/faker": "7.6.0"
+  }
+}

@@ -7,6 +7,7 @@ const hoversHeader = "#hovers-header";
 const basicAuthHeader = "#basicauth-header";
 const formHeader = "#form-header";
 const keyPressesHeader = "#keypresses-header";
+const addRemoveElementsHeader = "#addremoveelements-header";
 
 class HomePage {
   clickInputTab() {
@@ -34,6 +35,10 @@ class HomePage {
   }
   clickKeyPressesTab() {
     cy.get(keyPressesHeader).click();
+  }
+
+  clickAddElementTab() {
+    cy.get(addRemoveElementsHeader).click();
   }
 
   visitPage() {

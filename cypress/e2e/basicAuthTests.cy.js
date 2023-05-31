@@ -5,7 +5,7 @@ describe("dropdown page test", () => {
   beforeEach(() => {
     cy.visit("/");
     const homePage = new HomePage();
-    homePage.clickBasicAuthHeader();
+    homePage.clickBasicAuthTab();
   });
   it("should log in with correct data", () => {
     const basicAuthPage = new BasicAuthPage();

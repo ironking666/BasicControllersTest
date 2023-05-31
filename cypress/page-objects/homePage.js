@@ -8,6 +8,9 @@ const basicAuthHeader = "#basicauth-header";
 const formHeader = "#form-header";
 const keyPressesHeader = "#keypresses-header";
 const addRemoveElementsHeader = "#addremoveelements-header";
+const statusCodesHeader = "#statuscodes-header";
+const iFrameHeader = "#iframe-header";
+const datePickerHeader = "#datepicker-header";
 
 class HomePage {
   clickInputTab() {
@@ -26,7 +29,7 @@ class HomePage {
     cy.get(hoversHeader).click();
   }
 
-  clickBasicAuthHeader() {
+  clickBasicAuthTab() {
     cy.get(basicAuthHeader).click();
   }
 
@@ -39,6 +42,15 @@ class HomePage {
 
   clickAddElementTab() {
     cy.get(addRemoveElementsHeader).click();
+  }
+  clickStatusCodesTab() {
+    cy.get(statusCodesHeader).click();
+  }
+  clickIFrameTab() {
+    cy.get(iFrameHeader).click();
+  }
+  clickDatePickerTab() {
+    cy.get(datePickerHeader).click();
   }
 
   visitPage() {

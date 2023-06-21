@@ -1,16 +1,16 @@
-const addElementButton = ':contains("Add Element")';
-const removeElementButton = ':contains("Delete")';
+const addElementButton = ".example > button";
+const removeElementButton = ".added-manually";
 
 class AddRemoveElements {
   addElement() {
-    cy.get("button" + addElementButton).click();
-    cy.get("button" + removeElementButton).should("be.visible");
+    cy.get(addElementButton).click();
+    cy.get(removeElementButton).should("be.visible");
   }
 
   removeElement() {
     this.addElement();
-    cy.get("button" + removeElementButton).click();
-    cy.get("button" + removeElementButton).should("not.exist");
+    cy.get(removeElementButton).click();
+    cy.get(removeElementButton).should("not.exist");
   }
 }
 export default AddRemoveElements;

@@ -2,8 +2,10 @@ import HomePage from "../page-objects/homePage";
 import HoversPage from "../page-objects/hoversPage";
 
 describe("hover page test", () => {
-  it("test hover list", () => {
+  beforeEach(() => {
     cy.visit("/");
+  });
+  it("test hover list", () => {
     const homePage = new HomePage();
     homePage.clickHoverTab();
 
